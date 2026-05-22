@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Say Weee! Amazon Style UI</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+.header-top{
+    background:#131921;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 30px;
+}
+
+.logo{
+    font-size:34px;
+    font-weight:bold;
+    color:#58a6ff;
+}
+
+.search-area{
+    width:50%;
+    display:flex;
+}
+
+.search-area input{
+    width:100%;
+    padding:14px;
+    border:none;
+    font-size:16px;
+}
+
+.search-btn{
+    background:#febd69;
+    padding:14px 20px;
+    color:black;
+    font-weight:bold;
+}
+
+.right-menu{
+    display:flex;
+    gap:25px;
+    align-items:center;
+    font-size:14px;
+}
+
+.language{
+    padding:8px;
+    border-radius:8px;
+    border:none;
+}
+
+.navbar{
+    background:#232f3e;
+    color:white;
+    display:flex;
+    gap:30px;
+    padding:14px 30px;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.nav-item{
+    cursor:pointer;
+}
+
+.hero{
+    width:100%;
+    height:420px;
+    background:linear-gradient(to right,#4e54c8,#8f94fb);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+}
+
+.section{
+    width:95%;
+    margin:30px auto;
+}
+
+.card-row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+.flowchart{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    margin-top:40px;
+}
+
+.flow-title{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+.flow-line{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+}
+
+.step{
+    background:#232f3e;
+    color:white;
+    padding:16px 24px;
+    border-radius:12px;
+    font-weight:bold;
+}
+
+.arrow{
+    font-size:28px;
+    color:#444;
+}
+
+footer{
+    margin-top:50px;
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+</style>
+</head>
+<body>
+
+<div class="header-top">
+
+    <div class="logo">Say Weee!</div>
+
+    <div class="search-area">
+        <input type="text" placeholder="Search Asian food, ingredients, snacks...">
+        <div class="search-btn">Search</div>
+    </div>
+
+    <div class="right-menu">
+
+        <select class="language">
+            <option>EN</option>
+            <option>한국어</option>
+            <option>Tiếng Việt</option>
+            <option>中文</option>
+            <option>日本語</option>
+        </select>
+
+        <div>
+            Hello, Sign in<br>
+            <strong>My Page</strong>
+        </div>
+
+        <div>
+            Returns<br>
+            <strong>Orders</strong>
+        </div>
+
+        <div>
+            <strong>Cart 🛒</strong>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="navbar">
+    <div class="nav-item">Korea</div>
+    <div class="nav-item">Vietnam</div>
+    <div class="nav-item">Japan</div>
+    <div class="nav-item">China</div>
+    <div class="nav-item">Thailand</div>
+    <div class="nav-item">Snacks</div>
+    <div class="nav-item">Healthy Food</div>
+    <div class="nav-item">Discover Culture</div>
+    <div class="nav-item">Best Deals</div>
+</div>
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>Explore Asian Food Culture</h1>
+        <p>
+            Buy Asian food easily while discovering stories, recipes, and cultures from different countries.
+        </p>
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="card-row">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop">
+            <h3>Vietnamese Food</h3>
+            <p>
+                Explore pho ingredients, Vietnamese coffee, snacks, and traditional food culture.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?q=80&w=1200&auto=format&fit=crop">
+            <h3>Korean Best Sellers</h3>
+            <p>
+                Trending Korean ramen, drinks, frozen foods, and student favorite snacks.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=1200&auto=format&fit=crop">
+            <h3>Discover Culture</h3>
+            <p>
+                Learn recipes, cooking methods, and stories behind Asian foods.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200&auto=format&fit=crop">
+            <h3>Quick Meal</h3>
+            <p>
+                Easy meals and convenient foods for busy users and international students.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="flowchart">
+
+        <div class="flow-title">User Flow Chart</div>
+
+        <div class="flow-line">
+
+            <div class="step">HOME</div>
+            <div class="arrow">→</div>
+
+            <div class="step">Search / Category</div>
+            <div class="arrow">→</div>
+
+            <div class="step">Product Detail</div>
+            <div class="arrow">→</div>
+
+            <div class="step">Add to Cart</div>
+            <div class="arrow">→</div>
+
+            <div class="step">Checkout</div>
+            <div class="arrow">→</div>
+
+            <div class="step">Payment Complete</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    Say Weee! Redesign Project — Homepage Information Structure
+</footer>
+
+</body>
+</html>
