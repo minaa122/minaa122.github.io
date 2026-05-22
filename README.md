@@ -1,1 +1,0 @@
-# minaa122.github.io
